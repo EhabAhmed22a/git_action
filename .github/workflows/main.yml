@@ -4,6 +4,9 @@ on:
     branches: [main]
     paths:
       - 'src/**'
+concurrency: 
+  group: one_at_a_time
+  cancel-in-progress: false
 jobs:
   test:
     runs-on: ubuntu-latest
