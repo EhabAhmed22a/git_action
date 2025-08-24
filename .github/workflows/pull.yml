@@ -1,0 +1,11 @@
+name: test push filters
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is the pull"
