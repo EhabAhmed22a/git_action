@@ -1,4 +1,4 @@
-name: test push filters
+name: test push3filters
 on:
   push:
     branches: [main]
@@ -11,4 +11,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is the push"
+      - run: echo "this is the push3

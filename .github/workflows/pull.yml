@@ -6,7 +6,7 @@ on:
       - 'src/**'
 concurrency: 
   group: one_at_a_time
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   test:
     runs-on: ubuntu-latest
