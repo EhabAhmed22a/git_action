@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'src2/**'
+      - 'src/**'
 jobs:
   test:
     runs-on: ubuntu-latest
