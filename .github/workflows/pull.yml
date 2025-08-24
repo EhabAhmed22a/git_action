@@ -1,6 +1,6 @@
-name: test push filters
+name: test push2 filters
 on:
-  pull_request:
+  push:
     branches: [main]
     paths:
       - 'src2/**'
@@ -8,4 +8,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is the pull"
+      - run: echo "this is the push2"
