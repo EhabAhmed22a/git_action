@@ -5,6 +5,6 @@ jobs:
     example:
         runs-on: ubuntu-latest
         steps:
-                - env:
-                    pass: ${{secrets.pass}}
-                  run: echo "$pass"
+            - run: echo "$pass"
+              env:
+                pass: ${{secrets.PASS}}
