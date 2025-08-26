@@ -1,0 +1,10 @@
+name : test secrets
+on: push
+
+jobs:
+    example:
+        runs-on: ubuntu-latest
+        steps:
+                - env:
+                    pass: ${{secrets.pass}}
+                  run: echo "$pass"
